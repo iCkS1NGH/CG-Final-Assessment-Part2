@@ -74,13 +74,13 @@
   margin-bottom: 10px;
 }
 
-.card-value {
+.card-value{
   font-size: 36px;
   font-weight: 700;
   color: var(--orange);
 }
 
-.btn-primary {
+.btn-primary{
   padding: 11px 24px;
   background-color: var(--orange);
   color: #fff;
@@ -91,6 +91,6 @@
   transition: background-color 0.2s;
 }
 
-.btn-primary:hover {
+.btn-primary:hover{
   background-color: var(--orange-hover);
 }

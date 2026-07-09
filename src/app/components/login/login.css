@@ -1,5 +1,4 @@
-/* Full page centered layout */
-.page {
+.page{
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -7,7 +6,7 @@
   background-color: var(--bg-primary);
 }
 
-.loginCard {
+.loginCard{
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 12px;
@@ -16,45 +15,40 @@
   max-width: 400px;
 }
 
-.brand {
+.brand{
   font-size: 18px;
   font-weight: 700;
   color: var(--orange);
   margin-bottom: 24px;
 }
 
-.brand-dot {
-  font-size: 10px;
-  margin-right: 4px;
-}
-
-.title {
+.title{
   font-size: 24px;
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 6px;
 }
 
-.subtitle {
+.subtitle{
   font-size: 14px;
   color: var(--text-secondary);
   margin-bottom: 28px;
 }
 
-.field {
+.field{
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
-.field label {
+.field label{
   font-size: 14px;
   font-weight: 500;
   color: var(--text-secondary);
   margin-bottom: 8px;
 }
 
-.field input {
+.field input{
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: 8px;
@@ -65,17 +59,17 @@
   transition: border-color 0.2s;
 }
 
-.field input:focus {
+.field input:focus{
   border-color: var(--orange);
 }
 
-.error {
+.error{
   font-size: 12px;
   color: var(--danger);
   margin-top: 6px;
 }
 
-.error-box {
+.error-box{
   background-color: rgba(239, 68, 68, 0.1);
   border: 1px solid var(--danger);
   border-radius: 8px;
@@ -85,7 +79,7 @@
   margin-bottom: 16px;
 }
 
-.btn-primary {
+.btn-primary{
   width: 100%;
   padding: 11px;
   background-color: var(--orange);
@@ -97,7 +91,7 @@
   transition: background-color 0.2s;
 }
 
-.btn-primary:hover {
+.btn-primary:hover{
   background-color: var(--orange-hover);
 }
 

@@ -1,8 +1,7 @@
 <div class="page">
   <div class="loginCard">
-
     <div class="brand">
-      <span class="brand-dot">&#9679;</span> Event Portal
+      <p>Event Portal</p>
     </div>
     <h1 class="title">Welcome back</h1>
     <p class="subtitle">Sign in to your account</p>
@@ -34,7 +33,7 @@
         }
       </div>
 
-      @if(errorMessage) {
+      @if(errorMessage){
         <p class="error-box">{{errorMessage}}</p>
       }
       <button type="submit" class="btn-primary">Login</button>

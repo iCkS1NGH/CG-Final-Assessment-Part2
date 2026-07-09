@@ -1,4 +1,4 @@
-.navbar {
+.navbar{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,23 +7,23 @@
   border-bottom: 1px solid var(--border-color);
 }
 
-.brand {
+.brand{
   font-size: 18px;
   font-weight: 700;
   color: var(--orange);
 }
 
-.brand-dot {
+.brand-dot{
   font-size: 10px;
   margin-right: 4px;
 }
 
-.nav-actions {
+.nav-actions{
   display: flex;
   gap: 12px;
 }
 
-.btn-back {
+.btn-back{
   padding: 8px 16px;
   background-color: transparent;
   color: var(--text-secondary);
@@ -33,12 +33,12 @@
   transition: color 0.2s, border-color 0.2s;
 }
 
-.btn-back:hover {
+.btn-back:hover{
   color: var(--orange);
   border-color: var(--orange);
 }
 
-.btn-logout {
+.btn-logout{
   padding: 8px 16px;
   background-color: transparent;
   color: var(--text-secondary);
@@ -48,12 +48,12 @@
   transition: color 0.2s, border-color 0.2s;
 }
 
-.btn-logout:hover {
+.btn-logout:hover{
   color: var(--danger);
   border-color: var(--danger);
 }
 
-.main-container {
+.main-container{
   max-width: 960px;
   margin: 40px auto;
   padding: 0 24px;
@@ -84,26 +84,26 @@
   margin-bottom: 40px;
 }
 
-.form-grid {
+.form-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin-bottom: 24px;
 }
 
-.field {
+.field{
   display: flex;
   flex-direction: column;
 }
 
-.field label {
+.field label{
   font-size: 13px;
   font-weight: 500;
   color: var(--text-secondary);
   margin-bottom: 8px;
 }
 
-.field input {
+.field input{
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: 8px;
@@ -114,7 +114,7 @@
   transition: border-color 0.2s;
 }
 
-.field input:focus {
+.field input:focus{
   border-color: var(--orange);
 }
 
@@ -124,7 +124,7 @@
   margin-top: 6px;
 }
 
-.btn-primary {
+.btn-primary{
   padding: 11px 28px;
   background-color: var(--orange);
   color: #fff;
@@ -135,40 +135,39 @@
   transition: background-color 0.2s;
 }
 
-.btn-primary:hover {
+.btn-primary:hover{
   background-color: var(--orange-hover);
 }
 
-/* Table section */
-.table-section h2 {
+.table-section h2{
   font-size: 18px;
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 16px;
 }
 
-.empty-msg {
+.empty-m{
   font-size: 14px;
   color: var(--text-muted);
   padding: 24px 0;
 }
 
-.table-wrapper {
+.table-wrapp{
   overflow-x: auto;
   border: 1px solid var(--border-color);
   border-radius: 12px;
 }
 
-table {
+tab{
   width: 100%;
   border-collapse: collapse;
 }
 
-thead {
+thea{
   background-color: var(--bg-card);
 }
 
-th {
+t{
   padding: 12px 16px;
   font-size: 13px;
   font-weight: 600;
@@ -177,22 +176,22 @@ th {
   border-bottom: 1px solid var(--border-color);
 }
 
-td {
+t{
   padding: 12px 16px;
   font-size: 14px;
   color: var(--text-primary);
   border-bottom: 1px solid var(--border-color);
 }
 
-tbody tr:last-child td {
+tbody tr:last-child td{
   border-bottom: none;
 }
 
-tbody tr:hover {
+tbody tr:hover{
   background-color: var(--bg-card);
 }
 
-.btn-delete {
+.btn-delete{
   padding: 6px 14px;
   background-color: transparent;
   color: var(--danger);
@@ -202,7 +201,7 @@ tbody tr:hover {
   transition: background-color 0.2s, color 0.2s;
 }
 
-.btn-delete:hover {
+.btn-delete:hover{
   background-color: var(--danger);
   color: #fff;
 }
