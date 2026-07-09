@@ -1,0 +1,22 @@
+<nav class="navbar">
+  <span class="brand"><span class="brand-dot">&#9679;</span> Event Portal</span>
+  <button class="btn-logout" (click)="logout()">Logout</button>
+</nav>
+
+<div class="main-container">
+  <div class="welcome">
+    <h1>Dashboard</h1>
+    <p>Manage your event registrations from here.</p>
+  </div>
+
+  <div class="stats-cards">
+    <div class="card">
+      <p class="card-label">Total Registrations</p>
+      <p class="card-value">{{ totalParticipants }}</p>
+    </div>
+  </div>
+
+  <button class="btn-primary" (click)="goToRegistration()">
+    + Register Participant
+  </button>
+</div>

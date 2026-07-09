@@ -1,12 +1,12 @@
 <div class="page">
   <div class="loginCard">
-<!--logo-->
+
     <div class="brand">
       <span class="brand-dot">&#9679;</span> Event Portal
     </div>
     <h1 class="title">Welcome back</h1>
     <p class="subtitle">Sign in to your account</p>
-<!--form-->
+
     <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
       <div class="field">
         <label for="username">Username</label>
@@ -34,7 +34,6 @@
         }
       </div>
 
-<!--invalid creds error shown-->
       @if(errorMessage) {
         <p class="error-box">{{errorMessage}}</p>
       }
