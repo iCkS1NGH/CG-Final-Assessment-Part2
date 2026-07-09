@@ -13,11 +13,6 @@
   color: var(--orange);
 }
 
-.brand-dot{
-  font-size: 10px;
-  margin-right: 4px;
-}
-
 .nav-actions{
   display: flex;
   gap: 12px;
