@@ -1,0 +1,99 @@
+<nav class="navbar">
+  <span class="brand"><span class="brand-dot">&#9679;</span> Event Portal Page</span>
+  <div class="nav-actions">
+    <button class="btn-back" (click)="goBack()">&#8592; Dashboard</button>
+    <button class="btn-logout" (click)="logout()">Logout</button>
+  </div>
+</nav>
+
+<div class="main-container">
+
+  <div class="page-heading">
+    <h1>Event Registration</h1>
+    <p>Fill in the details below to register a participant.</p>
+  </div>
+
+  <div class="registration-form">
+    <form [formGroup]="regForm" (ngSubmit)="onAdd()">
+      <div class="form-grid">
+        <div class="field">
+          <label for="name">Participant Name</label>
+          <input id="name" type="text" formControlName="name" placeholder="Enter full name" />
+          @if(f['name'].invalid && f['name'].touched){
+            <span class="error">Name is required.</span>
+          }
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" formControlName="email" placeholder="Enter email address" />
+          @if (f['email'].touched) {
+            @if (f['email'].errors?.['required']) {
+              <span class="error">Email is required.</span>
+            } @else if (f['email'].errors?.['email']) {
+              <span class="error">Enter a valid email address.</span>
+            }
+          }
+        </div>
+
+        <div class="field">
+          <label for="eventName">Event Name</label>
+          <input id="eventName" type="text" formControlName="eventName" placeholder="Enter event name" />
+          @if (f['eventName'].invalid && f['eventName'].touched) {
+            <span class="error">Event name is required.</span>
+          }
+        </div>
+
+        <div class="field">
+          <label for="mobile">Mobile Number</label>
+          <input id="mobile" type="text" formControlName="mobile" placeholder="10-digit mobile number" maxlength="10" />
+          @if(f['mobile'].touched){
+            @if(f['mobile'].errors?.['required']){
+              <span class="error">Mobile number is required.</span>
+            }@else if(f['mobile'].errors?.['pattern']){
+              <span class="error">Enter a valid 10-digit mobile number.</span>
+            }
+          }
+        </div>
+      </div>
+      <button type="submit" class="btn-primary">Add Participant</button>
+    </form>
+  </div>
+
+  <div class="table-section">
+    <h2>Registered Participants</h2>
+
+    @if(participants.length === 0){
+      <p class="empty-msg">No participants registered yet.</p>
+    }@else{
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Event</th>
+              <th>Mobile Number</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for(p of participants; track p.id; let i = $index){
+              <tr>
+                <td>{{ i + 1 }}</td>
+                <td>{{ p.name }}</td>
+                <td>{{ p.email }}</td>
+                <td>{{ p.eventName }}</td>
+                <td>{{ p.mobile }}</td>
+                <td>
+                  <button class="btn-delete" (click)="onDelete(p.id)">Delete</button>
+                </td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    }
+  </div>
+</div>
